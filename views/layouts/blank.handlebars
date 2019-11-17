@@ -1,0 +1,15 @@
+{{{body}}}
+<!-- MODULE ALERT NOTIFICATION -->
+{{#if success}}
+    <div class="alert alert-success alert-with-icon" data-notify="container">
+        <button type="button" aria-hidden="true" class="close">×</button>
+        <span data-notify="icon" class="fa fa-check"></span>
+        <span data-notify="message">{{msg}}</span>
+    </div>
+{{else if errorMsg}}
+    <div class="alert alert-danger alert-with-icon" data-notify="container">
+        <button type="button" aria-hidden="true" class="close">×</button>
+        <span data-notify="icon" class="fa fa-times"></span>
+        <span data-notify="message">{{errorMsg}}</span>
+    </div>
+{{/if}}
